@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Vinyl&family=Wallpoet&display=swap");
 * {
-  -webkit-tap-highlight-color: transparent;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 html {
   font-size: 62.5%;
@@ -26,7 +26,7 @@ html {
   background-color: rgba(255, 255, 255, 0.1);
   background-image: radial-gradient(
     at bottom,
-    rgb(158, 144, 195, 0.2) 2%,
+    rgba(158, 144, 195, 0.2) 2%,
     rgba(255, 255, 255, 0.1)
   );
   border-radius: 2rem;
@@ -58,6 +58,7 @@ html {
   height: 25rem;
   width: 25rem;
   margin: auto;
+  position: relative;
 }
 img {
   width: 100%;
@@ -66,6 +67,7 @@ img {
   object-fit: cover;
   box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4);
 }
+
 /* Glassmorphism over disc */
 .volumeBar_container {
   display: flex;
