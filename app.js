@@ -120,7 +120,7 @@ music.addEventListener("timeupdate", (event) => {
 
 progress_div.addEventListener("click", (e) => {
   const duration = music.duration;
-  let move_progress = (e.offsetX / e.srcElement.clientWidth) * duration;
+  let move_progress = (e.offsetX / progress_div.offsetWidth) * duration;
   music.currentTime = move_progress;
 });
 
